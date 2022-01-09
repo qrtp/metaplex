@@ -65,6 +65,14 @@ const Header = (props: {
   const { phaseName, desc, date, status } = props;
   return (
     <Grid container justifyContent="center">
+      <div style={{ marginBottom: 10 }}>
+        <Typography variant="h4" style={{ fontWeight: 600 }}>
+          NFT 4 Cause Mint
+      </Typography>
+      </div>
+      <div style={{ marginBottom: 10 }}>
+        <img width="347" alt="banner" src="banner-square.png"></img>
+      </div>
       <Grid xs={6} justifyContent="center" direction="column">
         <Typography variant="h5" style={{ fontWeight: 600 }}>
           {phaseName}
@@ -164,8 +172,8 @@ export const PhaseHeader = ({
 
       {phase === Phase.Phase4 && (
         <Header
-          phaseName={candyMachinePredatesFairLaunch ? 'Phase 3' : 'Phase 4'}
-          desc={'Candy Time 🍬 🍬 🍬'}
+          phaseName={'Connected'}
+          desc={'Support charity!'}
           date={candyMachine?.state.goLiveDate}
           status="LIVE"
         />
